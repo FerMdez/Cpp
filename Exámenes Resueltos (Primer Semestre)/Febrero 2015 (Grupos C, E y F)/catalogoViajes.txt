@@ -1,0 +1,7 @@
+Nepal 10 2 0
+Mongolia 15 0 0
+Viena 3 8 2
+Viena 3 2 1
+Sicilia 5 1 1
+Las-Vegas 4 2 0
+XXX

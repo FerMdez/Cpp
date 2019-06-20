@@ -1,0 +1,6 @@
+Prestill pocoImporta 90 2634 true
+Pluton CAMPSA 104.2 2852 false
+CostaArrecife Costa 337 183900 false
+USSuranus UnitedFruit 82.14 3348 true
+Dedalo ArmadaEspanola 190 13000 false
+XXX

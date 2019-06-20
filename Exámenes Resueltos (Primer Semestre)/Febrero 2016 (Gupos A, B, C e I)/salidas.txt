@@ -1,0 +1,9 @@
+IB1231 A 2 1 Lisboa
+AF1231 A 3 1 Paris
+KLM1231 B 1 2 Amsterdam
+AL1236 A 3 1 Roma
+LU1301 A 5 0 Zagreb
+TP1302 B 2 2 Oporto
+AM1401 B 1 0 Cancun
+AV1411 B 3 3 Sao Paulo
+XXX

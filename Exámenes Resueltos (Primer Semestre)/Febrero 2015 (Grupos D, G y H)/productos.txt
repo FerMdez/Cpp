@@ -1,0 +1,5 @@
+L0001 1.25 0 Leche
+PC010 3.15 0 Pasta de dientes
+H0025 1.50 0 Huevos
+Y8912 1.50 1 Pack de 6 yogures
+XXX

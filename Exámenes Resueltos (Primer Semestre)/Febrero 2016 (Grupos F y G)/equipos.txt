@@ -1,0 +1,21 @@
+EquipoA
+3 9 8 0
+EquipoB
+3 4 1 0
+EquipoC
+0 5 4 0
+EquipoD
+2 3 2 1
+EquipoE
+1 2 1 0
+EquipoF
+2 5 3 1
+EquipoG
+2 6 1 1
+EquipoH
+2 5 2 1
+EquipoI
+1 4 1 0
+EquipoJ
+0 3 0 1
+XXX

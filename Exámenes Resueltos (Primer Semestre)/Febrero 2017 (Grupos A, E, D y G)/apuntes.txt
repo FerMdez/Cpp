@@ -1,0 +1,13 @@
+12 01 2015  500.22 Ingreso
+12 01 2015  1235.45 Salario
+23 01 2015  -324.24 Impuestos
+03 02 2015  -35.00 Transferencia
+04 02 2015  -1214.12 Transferencia
+23 02 2015  -83.15 Luz
+22 03 2015  -20.00 Tarjeta
+12 05 2015  -124.32 Luz
+23 02 2016  -23.54 Luz
+03 03 2016  -20.00 Devolución
+05 03 2016  1111.01 Salario
+05 05 2016  1300.01 Salario
+-1 
