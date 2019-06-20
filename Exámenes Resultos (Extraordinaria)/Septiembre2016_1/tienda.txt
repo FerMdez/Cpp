@@ -1,0 +1,31 @@
+3
+Juan
+Madrid
+3
+mouse
+El mejor mouse
+2
+pc
+El mejor pc
+1
+cable
+Los mejores cables
+4
+Maria
+Seattle
+2
+bici
+Gran bicicleta
+1
+rueda
+Ruedas estupendas
+2
+Luis
+Madrid
+2
+cuchara
+Cuchara para comer
+6
+tenedor
+Tenedores para comer
+6
