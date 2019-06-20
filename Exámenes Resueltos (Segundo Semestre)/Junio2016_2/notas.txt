@@ -1,0 +1,14 @@
+A
+3
+nombre1 apellidos1
+76541321G 15/06/01 10
+nombre2 apellidos2
+92648282F 15/06/06 5
+nombre3 apellidos3
+32154637K 15/06/03 8
+B
+2
+nombre4 apellidos4
+12345678X 15/06/01 9
+nombre5 apellidos5
+12225678F 15/06/01 9

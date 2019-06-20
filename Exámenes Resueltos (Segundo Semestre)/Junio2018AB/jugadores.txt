@@ -1,0 +1,5 @@
+Alberto 8
+Clara 5
+Susana 17
+Tadeo 8
+Victor 2
