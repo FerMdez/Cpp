@@ -15,7 +15,7 @@ ListaPersonas::ListaPersonas(){
 	_persona = new Persona * [_capacidad]; //Crea una lista de punteros (que en un futuro, apuntarán cada uno a una Persona(clase)).
 }
 
-inline ListaPersonas::ListaPersonas(int capacidad){
+ListaPersonas::ListaPersonas(int capacidad){
 	_capacidad = capacidad;
 	_contador = 0;
 	_persona = new Persona * [_capacidad]; //Crea una lista de punteros (que en un futuro, apuntarán cada uno a una Persona(clase)).
