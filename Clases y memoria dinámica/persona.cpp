@@ -1,3 +1,9 @@
+/*
+	Fernando Méndez
+	https://fernmend.ddns.net
+	C++ | Clases y memoria dinámica.
+*/
+
 #include "persona.h"
 using namespace std;
 
@@ -14,7 +20,6 @@ Persona::Persona(std::string nombre, std::string apellidos, std::string NIF, std
 	_NIF = NIF;
 	_edad = edad;
 }
-
 
 void Persona::mostrar() {
 	cout << setw(10) << right

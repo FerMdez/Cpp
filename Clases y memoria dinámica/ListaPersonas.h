@@ -1,3 +1,9 @@
+/*
+	Fernando Méndez
+	https://fernmend.ddns.net
+	C++ | Clases y memoria dinámica.
+*/
+
 #ifndef _LISTA
 #define _LISTA
 
@@ -6,22 +12,26 @@
 #include <conio.h>
 #include "persona.h"
 
-//Constantes:
+class ListaPersonas{
+public:
+	//Constructoras:
+	ListaPersonas();
+	ListaPersonas(int);
 
-//Tipos:
-typedef struct tListaPersonas {
-	Persona** persona;
-	int contador;
-	int capacidad;
+	//Métodos públicos:
+	void liberar(); //Libera la memoria dinámica.
+	void agregar(); //Añade objectos de la clase Persona a la lista.
+	void mostrar(); //Muestra la lista de personas.
+
+private:
+	//Atributos:
+	Persona** _persona;
+	int _capacidad, _contador;
+
+	//Métodos privados:
+	void ampliar(); //Amplia la lista en caso de que se alcance la máxima capacidad.
+	bool salir(); //Lee una tecla. Si es "ESC", devuleve true (false en caso contratio).
+
 };
 
-//Funciones:
-void iniciar(tListaPersonas&); //Inicializa una lista dinámica de la clase Persona, con un contador a '0' y una capacidad inicial de '2'.
-void ampliar(tListaPersonas&); //Amplia la lista en caso de que se alcance la capacidad máxima.
-void liberar(tListaPersonas&); //Libera la memoria dinámica.
-void agregar(tListaPersonas&); //Método para agregar una nueva persona a la lista.
-void mostrar(tListaPersonas&); //Muestra la lista de personas.
-bool salir(); //Lee una tecla, devuelve true si la tecla es "ESC".
-
 #endif // !_LISTA
-

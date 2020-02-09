@@ -1,3 +1,9 @@
+/*
+	Fernando Méndez
+	https://fernmend.ddns.net
+	C++ | Clases y memoria dinámica.
+*/
+
 #ifndef _Persona
 #define _Persona
 
@@ -17,8 +23,6 @@ public:
 private:
 	//Atributos:
 	std::string _nombre, _apellidos, _NIF, _edad;
-
-	//Métodos privados:
 };
 
 #endif // !_Persona

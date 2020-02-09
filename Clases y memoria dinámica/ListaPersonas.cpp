@@ -1,37 +1,51 @@
+/*
+	Fernando Méndez
+	https://fernmend.ddns.net
+	C++ | Clases y memoria dinámica.
+*/
+
+
 #include "ListaPersonas.h"
 using namespace std;
 
-void iniciar(tListaPersonas& lista) {
-	lista.capacidad = 2;
-	lista.contador = 0;
-	lista.persona = new Persona * [lista.capacidad]; //Crea una lista de punteros (que en un futuro, apuntarán cada uno a "tPersona").
+
+ListaPersonas::ListaPersonas(){
+	_capacidad = 2;
+	_contador = 0;
+	_persona = new Persona * [_capacidad]; //Crea una lista de punteros (que en un futuro, apuntarán cada uno a una Persona(clase)).
 }
 
-void ampliar(tListaPersonas& lista) {
-	lista.capacidad *= 2;
-	Persona** aux = new Persona * [lista.capacidad];
+inline ListaPersonas::ListaPersonas(int capacidad){
+	_capacidad = capacidad;
+	_contador = 0;
+	_persona = new Persona * [_capacidad]; //Crea una lista de punteros (que en un futuro, apuntarán cada uno a una Persona(clase)).
+}
 
-	for (int i = 0; i < lista.contador; i++) {
-		aux[i] = lista.persona[i];
+void ListaPersonas::ampliar() {
+	_capacidad *= 2;
+	Persona** aux = new Persona * [_capacidad];
+
+	for (int i = 0; i < _contador; i++) {
+		aux[i] = _persona[i];
 	}
 
-	delete[] lista.persona;
-	lista.persona = aux;
+	delete[] _persona;
+	_persona = aux;
 }
 
-void liberar(tListaPersonas& lista) {
-	for (int i = 0; i < lista.contador; i++) {
-		delete lista.persona[i];
+void ListaPersonas::liberar() {
+	for (int i = 0; i < _contador; i++) {
+		delete _persona[i];
 	}
 
-	delete[] lista.persona;
+	delete[] _persona;
 }
 
-void agregar(tListaPersonas& lista) {
+void ListaPersonas::agregar() {
 	string nombre, apellidos, NIF, edad;
 
 	do {
-		if (lista.contador == lista.capacidad) { ampliar(lista); }
+		if (_contador == _capacidad) { ampliar(); }
 		cout << "Introduzca nombre de persona: " << endl;
 		getline(cin, nombre);
 		cout << "Introduzca apellidos: " << endl;
@@ -40,22 +54,22 @@ void agregar(tListaPersonas& lista) {
 		getline(cin, NIF);
 		cout << "Introduzca edad: " << endl;
 		getline(cin, edad);
-		lista.persona[lista.contador] = new Persona(nombre, apellidos, NIF, edad);
-		lista.contador++;
+		_persona[_contador] = new Persona(nombre, apellidos, NIF, edad);
+		_contador++;
 		cout << "Pulse 'ESC' para SALIR, 'ENTER' para continuar..." << endl;
 	} while (!salir());
 }
 
-void mostrar(tListaPersonas& lista) {
+void ListaPersonas::mostrar() {
 	cout << setw(10) << right << "NOMBRE" << setw(20) << "APELLIDOS" << setw(20) << "NIF" << setw(15) << "EDAD" << endl;
 	cout << setw(75) << setfill('=') << "\n" << setfill(char(0));
-	for (int i = 0; i < lista.contador; i++) {
-		lista.persona[i]->mostrar();
+	for (int i = 0; i < _contador; i++) {
+		_persona[i]->mostrar();
 		cout << endl;
 	}
 }
 
-bool salir() {
+bool ListaPersonas::salir() {
 	int tecla = 27;
 	bool ESC = false;
 

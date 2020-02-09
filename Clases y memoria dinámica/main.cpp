@@ -1,3 +1,9 @@
+/*
+	Fernando Méndez
+	https://fernmend.ddns.net
+	C++ | Clases y memoria dinámica.
+*/
+
 #include "ListaPersonas.h"
 #include "checkML.h"
 
@@ -5,14 +11,12 @@
 int main() {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); //Detecta posibles fugas de memoria.
 
-	tListaPersonas personas;
+	ListaPersonas lista = ListaPersonas();
 
-	iniciar(personas);
-
-	agregar(personas);
-	mostrar(personas);
+	lista.agregar();
+	lista.mostrar();
 	system("PAUSE");
 
-	liberar(personas);
+	lista.liberar();
 	return 0;
 }
